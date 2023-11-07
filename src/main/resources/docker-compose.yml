@@ -1,0 +1,8 @@
+services: 
+ oracle-server-db:
+  container_name: "springboot_qa"
+  image: gvenzl/oracle-xe
+  ports: 
+      - 1521:1521
+  environment:
+    ORACLE_PASSWORD: "admin"
